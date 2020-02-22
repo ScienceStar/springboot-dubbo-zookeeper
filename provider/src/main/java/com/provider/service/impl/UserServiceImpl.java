@@ -13,13 +13,13 @@ import com.common.service.UserService;
  * @Date 2020/2/21
  * @Version V1.0
  **/
-@Service(version = "1.0.0")
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired UserMapper userMapper;
 
     @Override
     public User findUser() {
-        return userMapper.getOne((long) 1);
+        return userMapper.getOne( 1);
     }
 }
