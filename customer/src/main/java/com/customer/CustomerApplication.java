@@ -16,6 +16,7 @@ import org.springframework.context.annotation.ImportResource;
 public class CustomerApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(CustomerApplication.class);
         System.out.println("消费端启动成功!");
     }
