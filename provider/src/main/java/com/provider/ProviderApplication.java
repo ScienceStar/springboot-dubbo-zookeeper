@@ -22,7 +22,6 @@ public class ProviderApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProviderApplication.class,args);
         System.out.println("服务提供者启动成功!");
-
         try{
             System.in.read();
         }catch (IOException e){
