@@ -20,6 +20,6 @@
     <bean id="userService" class="com.provider.service.impl.UserServiceImpl"/>
     <bean id="personService" class="com.provider.service.impl.PersonServiceImpl"/>
     <!-- declare the com.common.service interface to be exported -->
-    <dubbo:service interface="com.common.service.UserService" ref="userService"/>
-    <dubbo:service interface="com.common.service.IPersonService" ref="personService"/>
+    <dubbo:service interface="com.common.service.UserService" ref="userService" version="1.0.1"/>
+    <dubbo:service interface="com.common.service.IPersonService" ref="personService" version="1.0.1"/>
 </beans>

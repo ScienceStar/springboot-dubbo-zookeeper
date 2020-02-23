@@ -10,7 +10,7 @@
     <dubbo:application name="consumer"/>
     <dubbo:registry address="zookeeper://47.106.87.72:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
-    <dubbo:reference id="userService" check="true" interface="com.common.service.UserService"/>
-    <dubbo:reference id="personService" check="true" interface="com.common.service.IPersonService"/>
+    <dubbo:reference id="userService" check="true" interface="com.common.service.UserService" version="1.0.1"/>
+    <dubbo:reference id="personService" check="true" interface="com.common.service.IPersonService" version="1.0.1"/>
     <dubbo:annotation package="com.customer.controller"/>
 </beans>

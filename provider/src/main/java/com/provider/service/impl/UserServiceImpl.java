@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
  * @Date 2020/2/21
  * @Version V1.0
  **/
-@Service
+@Service(version = "1.0.1")
 public class UserServiceImpl implements UserService {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
 

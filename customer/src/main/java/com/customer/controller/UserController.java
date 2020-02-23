@@ -20,11 +20,11 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    @Reference
+    @Reference(version = "1.0.1")
     private UserService userService;
 
     @Resource
-    @Reference
+    @Reference(version = "1.0.1")
     private IPersonService personService;
 
     @GetMapping("getUser")
