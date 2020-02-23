@@ -2,13 +2,6 @@ package com.common.domin;
 
 import java.io.Serializable;
 
-/**
- * Created with IntelliJ IDEA.
- * User: gaopeng
- * Date: 2018/8/28 0028
- * Time: 18:00
- * Description:
- */
 public class User implements Serializable{
     private Integer userId;
 
