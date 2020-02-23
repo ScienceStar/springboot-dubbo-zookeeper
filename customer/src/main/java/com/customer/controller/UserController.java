@@ -20,18 +20,18 @@ import javax.annotation.Resource;
 public class UserController {
 
     @Resource
-    @Reference(version="1.0.0")
+    @Reference
     private UserService userService;
 
     @Resource
-    @Reference(version="1.0.0")
+    @Reference
     private IPersonService personService;
 
     @GetMapping("getUser")
     public User getUser(){
         User user = userService.findUser();
         System.out.println("进入客户端控制器.............");
-        System.out.println(user.getId()+"\n"+
+        System.out.println(user.getUserId()+"\n"+
                            user.getName()+"\n"+
                            user.getAge()+"\n"+
                            user.getSex());
@@ -42,10 +42,52 @@ public class UserController {
     public User getPerson(){
         User user = personService.findUser();
         System.out.println("进入客户端控制器.............");
-        System.out.println(user.getId()+"\n"+
+        System.out.println(user.getUserId()+"\n"+
                 user.getName()+"\n"+
                 user.getAge()+"\n"+
                 user.getSex());
         return personService.findUser();
+    }
+
+    @GetMapping("getUserById")
+    public User getUserById(){
+        System.out.println("进来了！！！！！！！！！！！！！！！！");
+        System.out.println(userService.hashCode()+"!!!!!!!!!!!!!!!!");
+        int id = 1;
+        return userService.getUserById(id);
+    }
+
+    @GetMapping("saveUser")
+    public void saveUser(){
+        System.out.println("进来了！！！！！！！！！！！！！！！！");
+        System.out.println(userService.hashCode()+"!!!!!!!!!!!!!!!!");
+        User user = new User();
+        user.setName("赵洋");
+        user.setAge(12);
+        user.setSex("女");
+        int i = userService.saveUser(user);
+        System.out.println("是否保存成功？-------------"+i);
+    }
+
+    @GetMapping("updateUser")
+    public void updateUser(){
+        System.out.println("进来了！！！！！！！！！！！！！！！！");
+        System.out.println(userService.hashCode()+"!!!!!!!!!!!!!!!!");
+        User user = new User();
+        user.setUserId(1);
+        user.setName("赵洋");
+        user.setAge(13);
+        user.setSex("男");
+        int i = userService.updateUser(user);
+        System.out.println("是否保存成功？-------------"+i);
+    }
+
+    @GetMapping("deleteUser")
+    public void deleteUser(){
+        System.out.println("进来了！！！！！！！！！！！！！！！！");
+        System.out.println(userService.hashCode()+"!!!!!!!!!!!!!!!!");
+        int id = 3;
+        int i = userService.deleteUser(id);
+        System.out.println("是否保存成功？-------------"+i);
     }
 }

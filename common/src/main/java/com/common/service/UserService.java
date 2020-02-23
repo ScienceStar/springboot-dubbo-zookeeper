@@ -12,4 +12,9 @@ import com.common.domin.User;
 public interface UserService {
 
     public User findUser();
+
+    User getUserById(int id);
+    int saveUser(User user);
+    int updateUser(User user);
+    int deleteUser(int id);
 }

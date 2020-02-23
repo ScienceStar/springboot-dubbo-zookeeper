@@ -21,6 +21,6 @@ public class PersonServiceImpl implements IPersonService {
 
     @Override
     public User findUser() {
-        return userMapper.getOne((long) 1);
+        return userMapper.getOne(1);
     }
 }
