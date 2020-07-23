@@ -372,3 +372,16 @@
 20:31:31.634 [DubboServerHandler-192.168.1.102:20880-thread-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@125f9134] was not registered for synchronization because synchronization is not active
 20:31:31.634 [DubboServerHandler-192.168.1.102:20880-thread-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@10cf9246] will not be managed by Spring
 20:31:31.637 [DubboServerHandler-192.168.1.102:20880-thread-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@125f9134]
+20:33:38.705 [DubboServerHandler-192.168.1.102:20880-thread-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+20:33:38.705 [DubboServerHandler-192.168.1.102:20880-thread-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@300c61e] was not registered for synchronization because synchronization is not active
+20:33:38.726 [DubboServerHandler-192.168.1.102:20880-thread-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@10cf9246] will not be managed by Spring
+20:33:38.748 [DubboServerHandler-192.168.1.102:20880-thread-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@300c61e]
+20:33:38.751 [DubboServerHandler-192.168.1.102:20880-thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+20:36:44.552 [DubboServerHandler-192.168.1.102:20880-thread-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+20:36:44.552 [DubboServerHandler-192.168.1.102:20880-thread-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293f6344] was not registered for synchronization because synchronization is not active
+20:36:44.553 [DubboServerHandler-192.168.1.102:20880-thread-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@10cf9246] will not be managed by Spring
+20:36:44.559 [DubboServerHandler-192.168.1.102:20880-thread-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@293f6344]
+20:36:52.377 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+20:36:52.377 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523df66c] was not registered for synchronization because synchronization is not active
+20:36:52.377 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@10cf9246] will not be managed by Spring
+20:36:52.388 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523df66c]

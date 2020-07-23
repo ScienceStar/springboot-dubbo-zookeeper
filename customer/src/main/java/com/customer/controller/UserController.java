@@ -58,13 +58,9 @@ public class UserController {
     }
 
     @GetMapping("saveUser")
-    public void saveUser(){
+    public void saveUser(User user){
         System.out.println("进来了！！！！！！！！！！！！！！！！");
         System.out.println(userService.hashCode()+"!!!!!!!!!!!!!!!!");
-        User user = new User();
-        user.setName("赵洋");
-        user.setAge(12);
-        user.setSex("女");
         int i = userService.saveUser(user);
         System.out.println("是否保存成功？-------------"+i);
     }
