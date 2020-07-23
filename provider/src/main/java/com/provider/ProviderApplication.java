@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.io.IOException;
 
@@ -17,6 +18,7 @@ import java.io.IOException;
 @SpringBootApplication
 @ImportResource({"classpath:spring-dubbo.xml"})
 @MapperScan("mapper")
+@EnableTransactionManagement
 public class ProviderApplication {
 
     public static void main(String[] args) {
