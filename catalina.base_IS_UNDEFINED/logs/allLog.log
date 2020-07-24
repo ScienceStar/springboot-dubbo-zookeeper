@@ -385,3 +385,9 @@
 20:36:52.377 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523df66c] was not registered for synchronization because synchronization is not active
 20:36:52.377 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@10cf9246] will not be managed by Spring
 20:36:52.388 [DubboServerHandler-192.168.1.102:20880-thread-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523df66c]
+20:38:42.162 [Thread-11] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2654635: startup date [Thu Jul 23 20:31:07 CST 2020]; root of context hierarchy
+20:38:42.164 [ZkClient-EventThread-40-192.168.1.102:2184] INFO  org.I0Itec.zkclient.ZkEventThread - Terminate ZkClient event thread.
+20:38:42.165 [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+20:38:42.166 [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+20:38:42.170 [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000007e30f0008
+20:38:42.170 [DubboShutdownHook] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x1000007e30f0008 closed
