@@ -33,6 +33,8 @@ public interface UserMapper {
 
     User getUserById(int id);
 
+    User getUserByName(String name);
+
     int saveUser(User user);
 
     int updateUser(User user);

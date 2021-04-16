@@ -31,6 +31,11 @@ public class UserServiceImpl implements UserService {
         return userMapper.getOne(1);
     }
 
+    @Override
+    public User getUserByName(String name) {
+        return userMapper.getUserByName(name);
+    }
+
     /**
      * 获取user逻辑：
      * 如果缓存存在，从缓存中获取user信息

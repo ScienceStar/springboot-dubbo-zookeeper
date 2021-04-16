@@ -13,6 +13,7 @@ public interface UserService {
 
     public User findUser();
 
+    public User getUserByName(String name);
     User getUserById(int id);
     int saveUser(User user);
     int updateUser(User user);

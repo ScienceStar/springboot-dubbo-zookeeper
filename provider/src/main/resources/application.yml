@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     name: test
-    url: jdbc:mysql://localhost:3307/springdb
+    url: jdbc:mysql://localhost:3306/springdb
     username: root
-    password: 123456
+    password: password
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -29,7 +29,7 @@ spring:
   redis:
     #数据库索引
     database: 0
-    host: 192.168.1.102
+    host: 192.168.1.106
     port: 6379
     password: root
     jedis:

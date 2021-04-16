@@ -35,7 +35,7 @@ public class UserController {
                            user.getName()+"\n"+
                            user.getAge()+"\n"+
                            user.getSex());
-        return userService.findUser();
+        return userService.getUserByName("jack");
     }
 
     @GetMapping("getPerson")

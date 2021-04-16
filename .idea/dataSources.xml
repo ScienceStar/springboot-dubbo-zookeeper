@@ -1,23 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="master" uuid="29102d1e-aca4-4622-82f2-9d7cd82d5ac4">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
-    </data-source>
     <data-source source="LOCAL" name="slaver" uuid="e0281513-aa20-4aae-8813-8ff7a28eb6f5">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3307</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="mycat" uuid="048aebae-6cb7-4015-a6f8-829eebcd56fd">
+    <data-source source="LOCAL" name="master_cluster" uuid="6a45f254-01be-425f-b2f5-69202f3c88bd">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:8066</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3308</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="slave1" uuid="1beb400f-9b93-44af-9e51-c4fc98c8b360">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3309</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="slave2" uuid="2e2994b3-e629-41c2-88ad-b2197a6a4033">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3310</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="slave3" uuid="2d46b851-5467-4d4e-bbae-ade34fc65565">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3311</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="slave4" uuid="f99f19a9-4b2e-4337-b6f8-6887ff54d4a9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3312</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="master" uuid="d1b7625b-4ef8-4f04-a0d4-38865fd93319">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="mycat" uuid="3d18e92c-6f7c-4679-9da0-f902071860b7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://192.168.1.102:8066</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="local_data" uuid="01e38174-58e5-4251-8b0c-8dce68594cbb">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/springdb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
 </project>

@@ -20,3 +20,23 @@ docker run --name mycat -v /Users/lxc/Public/mycat/schema.xml:/Users/lxc/Public/
 		</writeHost>
 	</dataHost>
 </mycat:schema>
+
+docker run -d --name mycat -v /Users/lxc/Public/mycat/schema.xml:/mycat/conf/schema.xml -v /Users/lxc/Public/mycat/rule.xml:/mycat/conf/rule.xml -v /Users/lxc/Public/mycat/server.xml:/mycat/conf/server.xml -v /Users/lxc/Public/mycat/sequence_conf.properties:/mycat/conf/sequence_conf.properties -v /Users/lxc/Public/mycat/autopartition-long.txt:/mycat/conf/autopartition-long.txt --privileged=true -p 8066:8066 -p 9066:9066 -e MYSQL_ROOT_PASSWORD=123456 --network mysql_cloud --ip 172.20.0.5 mycat:1.6.7
+
+docker run -d -p 3308:3306 -e MYSQL_ROOT_PASSWORD=abc123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=abc123456 -v v1:/Users/lxc/Public/mysql/config --name=node1 --network=net1 --ip 172.18.0.2 pxc
+
+docker run -d -p 3309:3306 -e MYSQL_ROOT_PASSWORD=abc123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=abc123456 -e CLUSTER_JOIN=node1 -v v2:/Users/lxc/Public/mysql/config --name=node2 --net=net1 --ip 172.18.0.3 pxc
+
+docker run -d -p 3310:3306 -e MYSQL_ROOT_PASSWORD=abc123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=abc123456 -e CLUSTER_JOIN=node1 -v v3:/Users/lxc/Public/mysql/config --name=node3 --net=net1 --ip 172.18.0.4 pxc
+
+docker run -d -p 3311:3306 -e MYSQL_ROOT_PASSWORD=abc123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=abc123456 -e CLUSTER_JOIN=node1 -v v4:/Users/lxc/Public/mysql/config --name=node4 --net=net1 --ip 172.18.0.5 pxc
+
+docker run -d -p 3312:3306 -e MYSQL_ROOT_PASSWORD=abc123456 -e CLUSTER_NAME=PXC -e XTRABACKUP_PASSWORD=abc123456 -e CLUSTER_JOIN=node1 -v v5:/Users/lxc/Public/mysql/config --name=node5 --net=net1 --ip 172.18.0.6 pxc
+
+sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
+
+docker run -d -p 8066:8066 -p 9066:9066 --name mycat -v /mnt/mycat/ehcache.xml:/usr/local/mycat/conf/ehcache.xml -v /mnt/mycat/rule.xml:/usr/local/mycat/conf/rule.xml -v /mnt/mycat/server.xml:/usr/local/mycat/conf/server.xml -v /mnt/mycat/schema.xml:/usr/local/mycat/conf/schema.xml longhronshens/mycat-docker:latest
+
+docker run -d --name=mycat -p 18066:8066 -p 19066:9066 -v /Users/lxc/Public/mycat:/mycat/conf --network mysql_cloud --ip 172.20.0.5 mycat:1.6.7
+
+information_schema

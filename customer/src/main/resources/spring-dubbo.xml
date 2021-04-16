@@ -8,9 +8,17 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="consumer"/>
-    <dubbo:registry address="zookeeper://192.168.1.102:2184"/>
+    <dubbo:registry address="zookeeper://192.168.1.106:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
-    <dubbo:reference id="userService" check="true" interface="com.common.service.UserService" version="1.0.1"/>
+
+    <bean id="notifyService" class="com.customer.notify.impl.NotifyServiceImpl"/>
+
+    <dubbo:reference id="userService" check="true" interface="com.common.service.UserService" version="1.0.1">
+     <dubbo:method name="getUserByName" timeout="6000"
+         onreturn="notifyService.onreturnWithoutParam"
+         onthrow="notifyService.onthrow"/>
+    </dubbo:reference>
+
     <dubbo:reference id="personService" check="true" interface="com.common.service.IPersonService" version="1.0.1"/>
     <dubbo:annotation package="com.customer.controller"/>
 </beans>
