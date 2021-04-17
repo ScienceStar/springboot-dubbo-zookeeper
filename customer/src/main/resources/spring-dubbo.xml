@@ -8,7 +8,7 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="consumer"/>
-    <dubbo:registry address="zookeeper://192.168.1.106:2181"/>
+    <dubbo:registry address="zookeeper://192.168.1.103:2181"/>
     <dubbo:protocol name="dubbo" port="20880"/>
 
     <bean id="notifyService" class="com.customer.notify.impl.NotifyServiceImpl"/>
